@@ -5,9 +5,6 @@ día2 = int(input("Ingrese el día de su nacimiento [1-31]: )"))
 mes2= int(input("Ingrese el mes de su nacimiento [1-12]: )"))
 año2 = int(input("Ingrese el año de su nacimiento [1900-2025]: )"))
 
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
-
 def dias(día1, mes1, año1, día2, mes2, año2):
    
     def bisiesto(año):
@@ -202,11 +199,7 @@ def nahual(día1,mes1,año1,día2, mes2, año2):
     elif fecha%260==56:
         return "8 Ix'"
     elif fecha%260==57:
-        img = mpimg.imread('tzikin.png')
-        imgplot = plt.imshow(img)
-        plt.show()
-        return "9 Tz'ikin"
-
+        return "9 Tz'ikin" 
     elif fecha%260==58:
         return "10 Ajmaq"
     elif fecha%260==59:
