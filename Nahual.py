@@ -1,9 +1,5 @@
-día1 = 1
-mes1= 1
-año1 = 1900
-día2 = int(input("Ingrese el día de su nacimiento [1-31]: )"))
-mes2= int(input("Ingrese el mes de su nacimiento [1-12]: )"))
-año2 = int(input("Ingrese el año de su nacimiento [1900-2025]: )"))
+from unicodedata import name
+
 
 def dias(día1, mes1, año1, día2, mes2, año2):
    
@@ -80,9 +76,7 @@ def dias(día1, mes1, año1, día2, mes2, año2):
             total = día2 - día1
             return total
 
-fecha =dias(1,1,1900,día2,mes2,año2)
-
-def nahual(día1,mes1,año1,día2, mes2, año2):
+def nahual(día2, mes2, año2, día1=1,mes1=1,año1=1900):
     fecha=dias(día1,mes1,año1,día2, mes2, año2)
     if fecha%260==0:
         return "4 Tijax"
@@ -605,9 +599,15 @@ def nahual(día1,mes1,año1,día2, mes2, año2):
     elif fecha%260==259:
         return "3 No'j"
 
-nahual=nahual(1,1,1900,día2,mes2,año2)   
-print(nahual)
+def main():
+    día2 = int(input("Ingrese el día de su nacimiento [1-31]: )"))
+    mes2= int(input("Ingrese el mes de su nacimiento [1-12]: )"))
+    año2 = int(input("Ingrese el año de su nacimiento [1900-2025]: )"))
+    tunahual=nahual(día2,mes2,año2)   
+    print(tunahual)
+    fecha =dias(1,1,1900,día2,mes2,año2)
 
-
+if __name__=="__main__":
+    main()
 
 
