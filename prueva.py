@@ -11,3 +11,9 @@ pd.__version__
 Fechas = 'Paso.csv'
 df = pd.read_csv(Fechas)
 df
+
+if __name__ == '__main__':
+    from pycallgraph import PyCallGraph 
+    from pycallgraph.output import GraphvizOutput
+    with PyCallGraph(output = GraphvizOutput()):
+        main()
