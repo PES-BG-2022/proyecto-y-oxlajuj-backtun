@@ -57,9 +57,5 @@ label.pack()
 
 ventana.mainloop()
 
-from pycallgraph import PyCallGraph
-from pycallgraph.output import GraphvizOutput
 
-with PyCallGraph(output=GraphvizOutput()):
-    code_to_profile()
 
