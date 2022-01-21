@@ -37,3 +37,11 @@ El presente proyecto tiene como objetivo que el estudiante conozca nuevos paquet
 - El nivel de interés que despierta el proyecto puede ser medido por las consultas que haga el profesor o los estudiantes al final de la exposición.
 - Atender a otras indicaciones adicionales por parte del instructor al inicio y durante la presentación. 
 - La fecha de entrega máxima para realizar las confirmaciones será el **jueves 20 de enero de 2022 a las 23:59 horas**.
+
+
+## Proyecto Oxlajuj Backtun
+
+# Con base al calendario maya, que esta formado por 13 días y 20 meses, con un total de 2020, es que se puede determinar un nahual asociado
+# y este a su vez por la ideosincracia de los antepasados y ancestros, como parte de la pertinencia cultural que tiene es que se considero
+# este proyecto para establecer un contador de días y de esta manera tener un algoritmo que de como respuesta el nahual asociado a la fecha
+# de nacimiento y el glifo respectivo de cada nuhual y su nivel energético.
