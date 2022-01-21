@@ -599,6 +599,7 @@ def nahual(día2, mes2, año2, día1=1,mes1=1,año1=1900):
     elif fecha%260==259:
         return "3 No'j"
 
+<<<<<<< Updated upstream
 def main():
     día2 = int(input("Ingrese el día de su nacimiento [1-31]: )"))
     mes2= int(input("Ingrese el mes de su nacimiento [1-12]: )"))
@@ -610,4 +611,8 @@ def main():
 if __name__=="__main__":
     main()
 
+=======
+nahual=nahual(1,1,1900,día2,mes2,año2)   
+print(nahual)
+>>>>>>> Stashed changes
 
