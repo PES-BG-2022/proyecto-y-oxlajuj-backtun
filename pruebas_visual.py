@@ -3,6 +3,7 @@ from datetime import date
 from gettext import install
 from importlib.resources import path
 from tkinter import *
+from numpy import size
 from tkcalendar import Calendar, DateEntry
 
 import tkinter
@@ -19,11 +20,11 @@ import Nahual
 
 #Crear ventana principal
 ventana = tkinter.Tk()
-ventana.geometry("700x500")
+ventana.geometry("800x600")
 
 #Crear caja de fecha
 
-cal = DateEntry(ventana, selectmode="day", year = 2020, month = 5,day = 22, date_pattern="dd/mm/yyyy")
+cal = DateEntry(ventana, selectmode="day", year = 1993, month = 5,day = 13, date_pattern="dd/mm/yyyy")
 cal.pack(pady = 20)
 
 etiqueta = Label(ventana, text="Introduce tu fecha de nacimiento")
@@ -32,13 +33,13 @@ etiqueta.pack(side= tkinter.TOP)
 #Segunda ventana
 def ventana2():
     ventana2 = Toplevel()
-    ventana2.geometry("350x250")
+    ventana2.geometry("500x400")
     fecha = cal.get_date()
     TuNahual = Nahual.nahual(fecha.day, fecha.month, fecha.year)
     Energia,nahual=TuNahual.split()
     path=rf"C:\Users\manue\OneDrive\Escritorio\Python\proyecto-y-oxlajuj-backtun\Imagenes\{nahual}.png"
     print(nahual)
-    etiqueta1 = Label(ventana2, text=f"Tu Nahual es:{TuNahual}")
+    etiqueta1 = Label(ventana2, text=f"Tu Nahual es : {TuNahual}", bg="red", font=('Arial', 25))
     etiqueta1.pack()
     if path != "":
         image2 = PhotoImage(file=path)

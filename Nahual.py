@@ -103,7 +103,7 @@ def nahual(día2, mes2, año2, día1=1,mes1=1,año1=1900):
     elif fecha%260==11:
         return "2 Toj"
     elif fecha%260==12:
-        return "3 Tz'i"
+        return "3 Tz'i'"
     elif fecha%260==13:
         return "4 Batz'"
     elif fecha%260==14:
@@ -113,7 +113,7 @@ def nahual(día2, mes2, año2, día1=1,mes1=1,año1=1900):
     elif fecha%260==16:
         return "7 I'x"
     elif fecha%260==17:
-        return "8 Tz'kin"
+        return "8 Tz'ikin"
     elif fecha%260==18:
         return "9 Ajmaq"
     elif fecha%260==19:
@@ -191,7 +191,7 @@ def nahual(día2, mes2, año2, día1=1,mes1=1,año1=1900):
     elif fecha%260==55:
         return "7 Aj"
     elif fecha%260==56:
-        return "8 Ix'"
+        return "8 I'x"
     elif fecha%260==57:
         return "9 Tz'ikin" 
     elif fecha%260==58:
